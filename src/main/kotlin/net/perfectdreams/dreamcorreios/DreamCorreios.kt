@@ -117,7 +117,7 @@ class DreamCorreios : KotlinPlugin(), Listener {
 		val caixaPostal = holder.correios.caixasPostais.getOrNull(data.toInt())
 		val player = e.whoClicked as Player
 
-		if (caixaPostal == null) { // Ok, pelo visto o cara ficou com o inventário aperto por tanto tempo que o plugin até tinha limpado as caixas postais dele
+		if (caixaPostal == null) { // Ok, pelo visto o cara ficou com o inventário aberto por tanto tempo que o plugin até tinha limpado as caixas postais dele
 			player.sendMessage(PREFIX + "§cVocê demorou tanto tempo para escolher que essa caixa postal nem existe mais!")
 			player.closeInventory()
 			return
